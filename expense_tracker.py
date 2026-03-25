@@ -36,9 +36,9 @@ def view_expenses(expenses):
         return
     print("\n--- Your Expenses ---")
     for i, e in enumerate(expenses, 1):
-        print(f"{i}. {e['description']} - ${e['amount']:.2f} [{e['category']}]")
+        print(f"{i}. {e['description']} - Kshs{e['amount']:.2f} [{e['category']}]")
     total = sum(e["amount"] for e in expenses)
-    print(f"\nTotal spent: ${total:.2f}\n")
+    print(f"\nTotal spent: Kshs{total:.2f}\n")
 
 def view_by_category(expenses):
     if not expenses:
